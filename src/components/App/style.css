@@ -1,0 +1,23 @@
+.App {
+   background: radial-gradient(ellipse at top, #0d1e31, #111);
+   font-family: Consolas;
+   font-size: 1.1em;
+   min-height: 100vh;
+   color: #7a85b3;
+   display: flex;
+   flex-flow: column;
+}
+
+input, button, select {
+   border-radius: 0.2em;
+   padding: 0.4em 0.5em;
+   background-color: #0d1e31;
+}
+
+input {
+   caret-color: #7a85b3;
+}
+
+input::placeholder {
+   color: #5d6581;
+}

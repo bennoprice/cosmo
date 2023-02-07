@@ -1,0 +1,41 @@
+.slider .item {
+   display: flex;
+   justify-content: center;
+   flex: 0 0 calc(100% / var(--items-per-page));
+   max-width: calc(100% / var(--items-per-page));
+}
+
+.slider .item .poster {
+   border-radius: 0.3em;
+   background: radial-gradient(ellipse at bottom, #0d1e31, #010a14);
+   box-shadow: 0 0 7px 0 black;
+   aspect-ratio: 2 / 3;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   flex-grow: 1;
+   margin: 0 min(5%, 0.4em);
+   min-width: 0;
+   overflow: hidden;
+}
+
+.slider .item .poster h1 {
+   text-align: center;
+   font-size: min(1.8vw, 2em);
+   color: #283b50;
+   margin: 0 5%;
+}
+
+.slider .item .poster img {
+   aspect-ratio: 2 / 3; /* is necessary? */
+   height: 100%;
+   object-fit: fill;
+   border-radius: inherit;
+}
+
+.slider .item .poster svg {
+   color: #172535;
+   width: 60%;
+   height: 45%;
+}

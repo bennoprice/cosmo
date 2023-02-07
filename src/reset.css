@@ -1,0 +1,25 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   vertical-align: middle;
+}
+
+a, input, button, iframe, select {
+   border: none;
+   font: inherit;
+   text-decoration: inherit;
+   color: inherit;
+   outline: none;
+}
+
+button, select {
+   cursor: pointer;
+}
+
+:disabled {
+   opacity: 0.7;
+   cursor: default;
+}

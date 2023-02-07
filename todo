@@ -1,0 +1,30 @@
+switch to nextjs
+add proper backend
+   no need to expose api key
+   cannot simply clone frontend and maintain functionality
+add db to store accounts
+   simply username and password to track movie / episode progress
+add support for shows / live event
+
+split components into sub components
+add loading spinner
+show placeholder movie icon whilst image loading
+don't add search history
+style 404
+maybe fetch higher res images
+make image component -> onload show
+scrollwheel pull animation to next page
+
+reformat big elements <> like iframe
+change items per page for different res
+
+create src/hooks useLoad / useProgress
+add no results if no movies found
+logo scale so link is easy to click
+
+improve ux when searching
+   spinner when loading
+   can search only movies and tv shows in one request?
+   if not continuously request next page until fetched 20 items
+
+use jetch more

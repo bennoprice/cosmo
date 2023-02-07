@@ -1,0 +1,6 @@
+.notFound {
+    font-size: 10vw;
+    background: radial-gradient(ellipse at bottom, #214875, #081c35);
+    background-clip: text;
+    color: transparent;
+}

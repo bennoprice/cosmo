@@ -1,0 +1,50 @@
+:root {
+   --page-num: 0;
+   --items-per-page: 5;
+}
+
+.browse {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.control {
+   background: radial-gradient(ellipse at bottom, #254a74, #030e1b);
+   z-index: 1;
+   font-size: 3vw;
+   padding: 0 0.1vw 0.4vw 0.1vw;
+   border-radius: 1em;
+   color: #3f648f;
+   cursor: pointer;
+   height: 5vw;
+   opacity: 0.9;
+}
+
+.control:hover:enabled {
+   color: #57779c;
+   opacity: 1;
+}
+
+.control-left {
+   padding-right: 0.5vw;
+   margin-right: 0.5vw;
+   border-bottom-left-radius: 0;
+   border-top-left-radius: 0;
+}
+
+.control-right {
+   padding-left: 0.5vw;
+   margin-left: 0.5vw;
+   border-bottom-right-radius: 0;
+   border-top-right-radius: 0;
+}
+
+.slider {
+   display: flex;
+   flex-grow: 1;
+   width: 0;
+   transform: translateX(calc(var(--page-num) * -100%));
+   transition: transform 400ms ease;
+}
