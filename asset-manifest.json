@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cosmo/static/css/main.26d97993.css",
-    "main.js": "/cosmo/static/js/main.c451d04e.js",
+    "main.js": "/cosmo/static/js/main.fec9df8f.js",
     "static/media/movie.svg": "/cosmo/static/media/movie.163329c24d76193a116f85227d913a77.svg",
     "index.html": "/cosmo/index.html",
     "main.26d97993.css.map": "/cosmo/static/css/main.26d97993.css.map",
-    "main.c451d04e.js.map": "/cosmo/static/js/main.c451d04e.js.map"
+    "main.fec9df8f.js.map": "/cosmo/static/js/main.fec9df8f.js.map"
   },
   "entrypoints": [
     "static/css/main.26d97993.css",
-    "static/js/main.c451d04e.js"
+    "static/js/main.fec9df8f.js"
   ]
 }
