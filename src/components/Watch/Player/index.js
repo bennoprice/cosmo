@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Spinner from '../../Spinner';
 import './style.css';
 
-const vid_url = 'https://v2.vidsrc.me/embed/';
+const vid_url = 'https://vidsrc.me/embed';
 
 const StateEnum = {
    loading: 0,
@@ -15,14 +15,17 @@ const Player = ({ id, season, episode }) => {
    const [state, setState] = useState(StateEnum.loading);
 
    useEffect(() => {
-      if (season === 0 || episode === 0)
-         return;
+      const isSeries = season && episode;
 
-      const url = `${vid_url}${id}/${season}-${episode}`;
+      const url = isSeries ?
+         `${vid_url}/tv?tmdb=${id}&season=${season}&episode=${episode}&color=1d3c5f` :
+         `${vid_url}/movie?tmdb=${id}&color=1d3c5f`;
 
-      fetch(url, {method: 'head'})
+      setSrc(url);
+
+      /*fetch(url, {method: 'head'})
          .then(() => setSrc(url))
-         .catch(() => setState(StateEnum.error));
+         .catch(() => setState(StateEnum.error));*/
    }, [id, season, episode]);
 
    return (
